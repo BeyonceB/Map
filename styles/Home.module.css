@@ -10,15 +10,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background-color: rgb(16, 16, 104);
 }
 
 .footer a {
@@ -106,6 +107,8 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+  font-weight: 500;
+  font-size: 17px;
 }
 
 @media (max-width: 600px) {
@@ -117,13 +120,22 @@
 
 @media (prefers-color-scheme: dark) {
   .card,
-  .footer {
-    border-color: #222;
-  }
   .code {
     background: #111;
   }
   .logo img {
     filter: invert(1);
   }
+}
+
+.map {
+  width: 80%;
+  height: 40rem;
+  margin: 30px;
+  border-radius: 20px;
+}
+.text {
+  color: rgb(16, 16, 104);
+  font-size: 70px;
+  font-weight: 600;
 }
