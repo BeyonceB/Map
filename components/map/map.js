@@ -55,12 +55,12 @@ export default function Map(){
         [49.25367, -122.91868]
     ];
 
-    const purpleOption = {color: 'rgb(16, 16, 104)'};
-    const redOption = {color: 'red'};
+    const blueOption = {color: 'rgb(16, 16, 104)'};
+    const pinkOption = {color: '#bc1367'};
 
     
     return(
-        <MapContainer className={style.map} center={[49.20006, -122.94922]} zoom={11} scrollWheelZoom={true}>
+        <MapContainer className={style.map} center={[49.22006, -122.94922]} zoom={11} scrollWheelZoom={true}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -192,18 +192,18 @@ export default function Map(){
                 </Popup>
             </Marker>
             
-            <CircleMarker center={[49.28594, -123.11129]} pathOptions={redOption} radius={20}>
+            <CircleMarker center={[49.28594, -123.11129]} pathOptions={pinkOption} radius={20}>
                 <Popup>You reached your destination!</Popup>
             </CircleMarker>
-            <CircleMarker center={[49.18293, -122.84473]} pathOptions={redOption} radius={20}>
+            <CircleMarker center={[49.18293, -122.84473]} pathOptions={pinkOption} radius={20}>
                 <Popup>You reached your destination!</Popup>
             </CircleMarker>
-            <CircleMarker center={[49.25367, -122.91868]} pathOptions={redOption} radius={20}>
+            <CircleMarker center={[49.25367, -122.91868]} pathOptions={pinkOption} radius={20}>
                 <Popup>You reached your destination!</Popup>
             </CircleMarker>
 
-            <Polyline pathOptions={purpleOption} positions={kgeorge} />
-            <Polyline pathOptions={purpleOption} positions={pway} />
+            <Polyline pathOptions={blueOption} positions={kgeorge} />
+            <Polyline pathOptions={blueOption} positions={pway} />
         </MapContainer>
     )
 

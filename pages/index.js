@@ -18,7 +18,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
           <span className={styles.logo}>
-          © 2023 TransLink, all rights reserved
+          © 2023 TransLink Expo Line Map
           </span>
       </footer>
     

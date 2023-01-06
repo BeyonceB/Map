@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(16, 16, 104);
+  color: white;
 }
 
 .footer a {
@@ -130,9 +131,10 @@
 
 .map {
   width: 80%;
-  height: 40rem;
+  height: 38rem;
   margin: 30px;
   border-radius: 20px;
+  border: 8px dashed rgb(16, 16, 104);
 }
 .text {
   color: rgb(16, 16, 104);
