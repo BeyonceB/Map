@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.text}>Expoline Skytrain Map</div>
+        <div className={styles.text}>Expo Line Map</div>
         <Map />
       </main>
 
